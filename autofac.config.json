@@ -1,0 +1,14 @@
+{
+  "defaultAssembly": "ASP.NET MVC Core_Lesson 6",
+  "components": [
+    {
+      "type": "ASP.NET MVC Core_Lesson 6.Services.Impl.OrderService",
+      "services": [
+        {
+          "type": "ASP.NET MVC Core_Lesson 6.Services.IOrderService"
+        }
+      ],
+      "injectProperties": true
+    }
+  ]
+}
