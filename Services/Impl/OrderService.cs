@@ -30,6 +30,8 @@ namespace Lesson6.Services.Impl
 
         #endregion
 
+        #region Public Methods
+
         public async Task<Order> CreateAsync(int buyerId, string address, string phone, IEnumerable<(int productId, int quantity)> products)
         {
             var buyer = await _context.Buyers.FirstOrDefaultAsync(buyer => buyer.Id == buyerId);
@@ -41,7 +43,7 @@ namespace Lesson6.Services.Impl
             {
                 var productEntyty = await _context.Products.FirstOrDefaultAsync(product => product.Id == p.productId);
                 if (productEntyty == null)
-                    throw new Exception("Product not found.");
+                    throw new Exception("Product not found");
                 if (productCollection.ContainsKey(productEntyty))
                     productCollection[productEntyty] += p.quantity;
                 else
@@ -67,5 +69,7 @@ namespace Lesson6.Services.Impl
 
             return order;
         }
+
+        #endregion
     }
 }
