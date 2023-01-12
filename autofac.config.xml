@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<autofac defaultAssembly="ASP.NET MVC Core_Lesson 6">
+	<components name="0">
+		<type>ASP.NET MVC Core_Lesson 6.Services.Impl.OrderService</type>
+		<services name="0" type="ASP.NET MVC Core_Lesson 6.Services.IOrderService" />
+		<injectProperties>true</injectProperties>
+	</components>
+</autofac>
